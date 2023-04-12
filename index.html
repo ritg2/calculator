@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Scientific Calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">
+        <div class="ans-container">
+          <span class="history"
+            ><i class="fa-solid fa-clock-rotate-left"></i
+          ></span>
+          <span class="ans"></span>
+        </div>
+        <input type="text" name="name" id="input" />
+      </div>
+      <div class="keyboard-container">
+        <div class="scientific-keyboard">
+          <button class="operation switch" onclick="toggle(this)">
+            <span>Rad</span>|<span class="active">Deg</span>
+          </button>
+          <button class="operation" onclick="factorial()">x!</button>
+          <button class="operation" onclick="inverse(this)">Inv</button>
+          <button class="operation afk" onclick="sine()">sin</button>
+          <button class="operation" onclick="ln()">ln</button>
+          <button class="operation" onclick="pii()">π</button>
+          <button class="operation afk" onclick="cosine()">cos</button>
+          <button class="operation" onclick="logarithm()">log</button>
+          <button class="operation">e</button>
+          <button class="operation afk" onclick="tangent()">tan</button>
+          <button class="operation" onclick="squareRoot()">√</button>
+          <button class="operation" onclick="answer()">Ans</button>
+          <button class="operation" onclick="exponential()">EXP</button>
+          <button class="operation" onclick="power()">x<sup>y</sup></button>
+        </div>
+        <div class="basic-keyboard">
+          <button class="num opt">(</button>
+          <button class="num opt">)</button>
+          <button class="operation" onclick="percent()">%</button>
+          <button class="operation" onclick="clearAll()">CE</button>
+          <button class="num">7</button>
+          <button class="num">8</button>
+          <button class="num">9</button>
+          <button class="operation" onclick="divide()">÷</button>
+          <button class="num">4</button>
+          <button class="num">5</button>
+          <button class="num">6</button>
+          <button class="operation" onclick="multiply()">×</button>
+          <button class="num">1</button>
+          <button class="num">2</button>
+          <button class="num">3</button>
+          <button class="num opt"> - </button>
+          <button class="num">0</button>
+          <button class="num">.</button>
+          <button class="operation equal" onclick="equals()">=</button>
+          <button class="num opt"> + </button>
+        </div>
+      </div>
+      <div class="mode">
+        <span class="basic mode-active">123</span>
+        <span class="scientific">Fx</span>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

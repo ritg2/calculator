@@ -126,6 +126,11 @@ input:focus {
     display: none;
   }
 
+  .calculator{
+    max-width: 700px;
+    min-width: 320px;
+  }
+
   .basic-keyboard {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
